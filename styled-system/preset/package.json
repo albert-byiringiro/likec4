@@ -11,7 +11,7 @@
     "generate": "tsx --conditions=sources ./generate.ts",
     "typecheck": "tsc --noEmit",
     "prebuild": "rm -rf dist/*",
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org",

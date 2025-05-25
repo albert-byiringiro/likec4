@@ -7,10 +7,10 @@
   "scripts": {
     "gupdate-theme-c4": "tsx scripts/generate-theme-c4.mts",
     "generate": "astro sync",
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "node init && astro dev",
+    "start": "node init && astro dev",
     "typecheck": "astro check",
-    "build": "astro build",
+    "build": "node init && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "deploy": "npx wrangler pages deploy dist --commit-dirty=true --project-name likec4-docs-astro",

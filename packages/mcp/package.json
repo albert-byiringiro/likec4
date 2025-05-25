@@ -26,7 +26,7 @@
   ],
   "scripts": {
     "typecheck": "tsc -b --verbose",
-    "build": "wireit",
+    "build": "node init && wireit",
     "inspector": "wireit"
   },
   "wireit": {

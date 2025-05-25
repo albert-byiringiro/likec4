@@ -12,7 +12,7 @@
   "bugs": "https://github.com/likec4/likec4/issues",
   "scripts": {
     "typecheck": "tsc -b --verbose",
-    "build": "unbuild",
+    "build": "node init && unbuild",
     "lint": "run -T eslint src/ --fix",
     "test": "vitest run --no-isolate",
     "test:watch": "vitest",
