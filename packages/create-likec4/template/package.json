@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "likec4 start",
-    "dev": "likec4 serve",
-    "build": "likec4 build",
+    "start": "node init && likec4 start",
+    "dev": "node init && likec4 serve",
+    "build": "node init && likec4 build",
     "export:png": "likec4 export png -o ./png"
   },
   "devDependencies": {

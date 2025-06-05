@@ -68,9 +68,9 @@
   "packageManager": "pnpm@10.11.0",
   "scripts": {
     "typecheck": "tsc --build --verbose",
-    "build:dist": "vite build -m production",
-    "build:bundle": "vite build -m bundle",
-    "build": "echo \"use pnpm turbo run build\" || true",
+    "build:dist": "node init && vite build -m production",
+    "build:bundle": "node init && vite build -m bundle",
+    "build": "node init && echo \"use pnpm turbo run build\" || true",
     "pack": "pnpm pack",
     "postpack": "cp likec4-diagram-$npm_package_version.tgz package.tgz || true",
     "test": "vitest run --no-isolate"

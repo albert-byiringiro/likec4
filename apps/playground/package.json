@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "generate": "wireit",
-    "dev": "wireit",
+    "dev": "node init && wireit",
     "typecheck": "tsc --build --verbose",
-    "build": "vite build",
+    "build": "node init && vite build",
     "preview": "vite preview",
     "wrangler:deploy": "wrangler deploy -c dist/playground/wrangler.json",
     "wrangler:preview": "wrangler versions upload -c dist/playground/wrangler.json",

@@ -19,7 +19,7 @@
   },
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "build": "unbuild",
+    "build": "node init && unbuild",
     "generate": "panda codegen && panda cssgen",
     "emit-pkg": "panda emit-pkg --base dist"
   },
