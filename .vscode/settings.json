@@ -1,106 +1,23 @@
 {
-  "typescript.tsdk": "./node_modules/typescript/lib",
-  "typescript.enablePromptUseWorkspaceTsdk": true,
-  "eslint.enable": false,
-  "[typescript]": {
-    "editor.defaultFormatter": "dprint.dprint",
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "dprint.dprint",
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "dprint.dprint",
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "dprint.dprint",
-  },
-  "[json]": {
-    "editor.defaultFormatter": "dprint.dprint",
-  },
-  "[json5]": {
-    "editor.defaultFormatter": "dprint.dprint",
-  },
-  "[markdown]": {
-    "editor.defaultFormatter": "dprint.dprint",
-  },
-  "[mdx]": {
-    "editor.defaultFormatter": "dprint.dprint",
-  },
-  "[css]": {
-    "editor.defaultFormatter": "dprint.dprint",
-  },
-  "files.readonlyInclude": {
-    "**/routeTree.gen.ts": true
-  },
-  "files.watcherExclude": {
-    "**/routeTree.gen.ts": true
-  },
   "search.exclude": {
-    ".yarn/**": true,
-    "yarn.lock": true,
-    "node_modules/**": true,
-    "packages/*/dist/**": true,
-    "packages/*/bundle/**": true,
-    "**/routeTree.gen.ts": true
+    "**/.sst": true
   },
-  "files.exclude": {
-    "**/*.tsbuildinfo": true,
-    "**/.turbo": true,
-    "**/.wireit": true,
-    "**/.wrangler": true,
-    ".pnpm-store/**": true,
-    "packages/likec4/__app__": true,
-    "packages/*/.vscode-test-web": true,
-    "packages/*/node_modules": true,
-    "packages/*/styled-system": true,
-    "packages/*/lib": true,
-    "apps/*/lib": true,
-    "apps/*/styled-system": true,
-    "styled-system/*/node_modules": true,
-    "styled-system/*/lib": true
-  },
-  "json.schemas": [
-    {
-      "url": "./node_modules/langium-cli/langium-config-schema.json",
-      "fileMatch": [
-        "langium-config.json"
-      ]
-    },
-    {
-      "url": "./.vscode/dprint-schema.json",
-      "fileMatch": [
-        "dprint.json"
-      ]
-    }
-  ],
-  "cSpell.words": [
-    "clsx",
-    "codegen",
-    "execa",
-    "gridify",
-    "hookz",
-    "khroma",
-    "langium",
-    "likec4",
-    "mantine",
-    "nodrag",
-    "nonexhaustive",
-    "nopan",
-    "outfile",
-    "pannable",
-    "rawmodel",
-    "reactflow",
-    "remeda",
-    "styleprops",
-    "tanstack",
-    "tilg",
-    "typecheck",
-    "webcola",
-    "xyflow",
-    "zoomable"
-  ],
-  "sonarlint.connectedMode.project": {
-    "connectionId": "likec4",
-    "projectKey": "likec4_likec4"
+  "task.allowAutomaticTasks": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "debug.openDebug": "neverOpen",
+  "problems.autoReveal": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.inheritEnv": false,
+  "jestrunner.configPath": "jest.unit.config.cjs",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
   }
 }

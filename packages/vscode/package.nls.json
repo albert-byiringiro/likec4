@@ -1,9 +1,0 @@
-{
-  "ext.title": "LikeC4",
-  "ext.cmd.open-preview": "Open Preview",
-  "ext.cmd.restart": "Restart Language Server",
-  "ext.cmd.locate": "Locate element",
-  "ext.cmd.preview-context-open-source": "Open source",
-  "ext.cmd.print-dot-of-currentview": "Print DOT of current view to output",
-  "ext.cmd.validate-layout": "Validate layout"
-}

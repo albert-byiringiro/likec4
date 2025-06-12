@@ -1,5 +1,0 @@
-contrib/
-dist/
-*.vsix
-src/meta.ts
-data/config.schema.json

